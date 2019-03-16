@@ -19,7 +19,6 @@ foreach ( glob( plugin_dir_path( __FILE__ ) . 'admin/*.php' ) as $file ) {
 // Include the shared dependency.
 include_once( plugin_dir_path( __FILE__ ) . 'shared/class-deserializer.php' );
 include_once( plugin_dir_path( __FILE__ ) . 'plugin.php' );
-include_once( plugin_dir_path( __FILE__ ) . 'update.php' );
  
 add_action( 'plugins_loaded', 're_wp_custom_admin_settings' );
 
