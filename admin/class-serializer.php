@@ -38,12 +38,11 @@ class Serializer {
         }
  
         // If the above are valid, sanitize and save the option.
-        if (null !== wp_unslash( $_POST['chrome-bar-color'] ) ) { 
-            $value = sanitize_text_field( $_POST['chrome-bar-color'] );
-            update_option( 'chrome-bar-color', $value );
- 			update_option( 'add-font-awesome', isset($_POST['add-font-awesome']));
- 			update_option( 'allow-svg', isset($_POST['allow-svg']));
-        }
+        $value = sanitize_text_field( $_POST['chrome-bar-color'] );
+        update_option( 'chrome-bar-color', $value );
+ 		update_option( 'add-font-awesome', isset($_POST['add-font-awesome']));
+        update_option( 'allow-svg', isset($_POST['allow-svg']));
+        update_option( 'g-analytics-id', $_POST['g-analytics-id']);
  
         $this->redirect();
  

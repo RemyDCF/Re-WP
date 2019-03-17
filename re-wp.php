@@ -44,3 +44,4 @@ function re_wp_plugin_activate() {
     update_option('allow-svg', true );
     update_option('add-font-awesome', false );
 }
+?>

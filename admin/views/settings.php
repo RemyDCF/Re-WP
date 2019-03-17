@@ -33,6 +33,12 @@
 <p class="description" id="chrome-bar-color-description">Set the color of the Chrome bar in mobile apps (see <a href="https://developers.google.com/web/updates/2014/11/Support-for-theme-color-in-Chrome-39-for-Android">the documentation</a> to learn more about this feature)</strong></p></td>
 </tr>
 
+<tr>
+<th scope="row">Google Analytics</th>
+<td><input name="g-analytics-id" type="text" id="g-analytics-id" aria-describedby="g-analytics-id-description" value="<?php echo esc_attr( $this->deserializer->get_value( 'g-analytics-id' ) ); ?>" placeholder="XX-XXXXXXXXX-X" class="regular-text ltr">
+<p class="description" id="g-analytics-id-description">Set the Google Analytics Tracking ID to activate Google Analytics</strong></p></td>
+</tr>
+
 </tbody></table>
 
 			<?php
