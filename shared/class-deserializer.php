@@ -14,7 +14,8 @@
  *
  * @package Custom_Admin_Settings
  */
-class Deserializer {
+class rewp_Deserializer
+{
  
     /**
      * Retrieves the value for the option identified by the specified key. If
@@ -23,7 +24,8 @@ class Deserializer {
      * @param  string $option_key The key used to identify the option.
      * @return string             The value of the option or an empty string.
      */
-    public function get_value( $option_key ) {
-        return get_option( $option_key, '' );
+    public function get_value($option_key)
+    {
+        return get_option($option_key, '');
     }
 }

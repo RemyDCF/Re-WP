@@ -13,7 +13,8 @@
  *
  * @package Re:WP
  */
-class Submenu {
+class rewp_Submenu
+{
  
         /**
      * A reference the class responsible for rendering the submenu page.
@@ -29,23 +30,25 @@ class Submenu {
      * @param Submenu_Page $submenu_page A reference to the class that renders the
      *                                                                   page for the plugin.
      */
-    public function __construct( $submenu_page ) {
+    public function __construct($submenu_page)
+    {
         $this->submenu_page = $submenu_page;
     }
  
     /**
      * Adds a submenu for this plugin to the 'Tools' menu.
      */
-    public function init() {
-         add_action( 'admin_menu', array( $this, 'add_options_page' ) );
+    public function init()
+    {
+        add_action('admin_menu', array( $this, 'add_options_page' ));
     }
  
     /**
      * Creates the submenu item and calls on the Submenu Page object to render
      * the actual contents of the page.
      */
-    public function add_options_page() {
- 
+    public function add_options_page()
+    {
         add_options_page(
             'Re:WP',
             'Re:WP',
