@@ -11,7 +11,7 @@ if (get_option('rewp_allow-svg')) {
 }
 
 if (get_option('rewp_add-font-awesome')) {
-    wp_enqueue_script('rewp_fontawesome', 'https://use.fontawesome.com/releases/v5.7.2/js/all.js', array(), 'v5.7.2');
+    wp_enqueue_script('rewp_fontawesome', 'https://use.fontawesome.com/releases/v5.11.2/js/all.js', array(), 'v5.7.2');
 }
 
 function rewp_chrome_bar_color()
